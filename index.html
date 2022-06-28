@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru-en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LP Weather</title>
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="stylesheet" href="/css/null.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <main>
+      <section class="logotype">
+        <div class="logotype__img"></div>
+      </section>
+      <section class="main hidden current-screen">
+        <div class="container center">
+          <h1 class="main__title h1">
+            Find out the temperature in your city right now
+          </h1>
+
+          <div class="main__input">
+            <input class="main__input" type="text" />
+          </div>
+          <button class="main__submit btn" type="submit">
+            Check your weather now
+          </button>
+        </div>
+      </section>
+
+      <section class="output hidden">
+        <div class="container">
+          <h2 class="output__title h2">
+            In <span id="place">New York</span> now
+          </h2>
+          <div class="output__degrees-container">
+            <span class="output__degrees-elips">°</span>
+            <h2 class="output__degrees">10</h2>
+            <p class="output__degrees-subtitle">Sunly</p>
+          </div>
+          <button class="output__back-btn btn" type="submit">Back</button>
+        </div>
+      </section>
+
+      <section id="_1" class="change-lang pop-up-modal hidden">
+        <div class="change-lang__pop-up pop-up">
+          <span class="pop-up__cross">✕</span>
+          <h2 class="change-lang__title h2">Change the language</h2>
+          <div class="change-lang__lang-container">
+            <p class="change-lang__lang change-lang__lang_enabled">English</p>
+            <div class="change-lang__mid-line"></div>
+            <p class="change-lang__lang">Russian</p>
+          </div>
+          <button class="change-lang__btn pop-up__btn">Ok</button>
+        </div>
+      </section>
+
+      <section id="_2" class="about pop-up-modal hidden">
+        <div class="pop-up">
+          <span class="pop-up__cross">✕</span>
+          <h2 class="about__title h2">About Me</h2>
+          <p class="about__descript">
+            HI! I'm a Front-End Developer and Web Designer
+          </p>
+          <button class="pop-up__btn">Ok</button>
+        </div>
+      </section>
+      <section id="_3" class="feedback pop-up-modal hidden">
+        <div class="pop-up">
+          <span class="pop-up__cross">✕</span>
+          <h2 class="feedback__title h2">Feedback</h2>
+          <ul class="feedback__items">
+            <li class="feedback__item feedback__item_gg"><a href="#_"></a></li>
+            <li class="feedback__item feedback__item_tg"><a href="#_"></a></li>
+            <li class="feedback__item feedback__item_in"><a href="#_"></a></li>
+          </ul>
+          <button class="pop-up__btn">Ok</button>
+        </div>
+      </section>
+
+      <!-- <ul class="nav-bar_horizontal">
+            <li class="nav-bar__item nav-bar__item_lang"></li>
+            <li class="nav-bar__item nav-bar__item_about"></li>
+            <li class="nav-bar__item nav-bar__item_feed"></li>
+        </ul> -->
+    </main>
+
+    <ul class="nav-menu">
+      <li class="nav-menu__item" data-tab-link="#_1">Language</li>
+      <li class="nav-menu__item" data-tab-link="#_2">About Me</li>
+      <li class="nav-menu__item" data-tab-link="#_3">Feedback</li>
+    </ul>
+
+    <button class="nav-menu-btn">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-bar">
+      <li class="nav-bar__item"></li>
+      <li class="nav-bar__item"></li>
+      <li class="nav-bar__item"></li>
+    </ul>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
